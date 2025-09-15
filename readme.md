@@ -41,3 +41,16 @@
 
 - git config --global user.email "you@example.com"
 - git config --global user.name "Your Name"
+
+# Environment
+
+Criar um arquivo `.env` dentro do `backend`.
+
+```
+DB_HOST=localhost
+DB_PORT=3306
+DB_USER=root
+DB_PASSWORD=''
+DB_DATABASE=jornal
+SV_PORT=3000
+```

@@ -1,11 +1,23 @@
 {
+    "name": "noticias",
+    "description": "Projeto completo: frontend (HTML, CSS, JS) + backend (Node.js + Express + MySQL)",
+    "main": "js/server.js",
+    "scripts": {
+        "start": "node js/server.js"
+    },
+    "keywords": [
+        "node",
+        "express",
+        "mysql",
+        "backend",
+        "api",
+        "frontend"
+    ],
     "dependencies": {
         "cors": "^2.8.5",
         "dotenv": "^17.2.2",
         "express": "^5.1.0",
-        "mysql2": "^3.14.3"
-    },
-    "scripts": {
-        "start": "node --require dotenv/config js/server.js"
+        "mysql2": "^3.14.3",
+        "package": "^1.0.1"
     }
 }

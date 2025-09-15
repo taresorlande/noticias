@@ -1,3 +1,5 @@
+const API_URL = "https://noticias-production-feb8.up.railway.app"
+
 function alternar_tema() {
     document.body.classList.toggle('tema-escuro');
 }
@@ -19,7 +21,7 @@ async function exibir_noticias() {
     container.innerHTML = "<p>Carregando notícias...</p>";
 
     try {
-        const resposta = await fetch("http://localhost:3000/noticias");
+        const resposta = await fetch(`${API_URL}/noticias`);
         if (!resposta.ok) throw new Error("Erro ao buscar notícias");
 
         const noticias = await resposta.json();
@@ -54,7 +56,7 @@ async function cadastrar_noticia() {
     };
 
     try {
-        const resposta = await fetch("http://localhost:3000/noticia", {
+        const resposta = await fetch(`${API_URL}/noticia`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(noticia)
@@ -81,7 +83,7 @@ async function cadastrar_noticia() {
     };
 
     try {
-        const resposta = await fetch("http://localhost:3000/noticia", {
+        const resposta = await fetch(`${API_URL}/noticia`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(noticia)
@@ -103,7 +105,7 @@ async function excluirNoticia(id) {
     if (!confirm(`Tem certeza que deseja excluir esta notícia?`)) return;
 
     try {
-        const resposta = await fetch(`http://localhost:3000/noticia/${id}`, {
+        const resposta = await fetch(`${API_URL}/noticia/${id}`, {
             method: "DELETE"
         });
 

@@ -3,13 +3,16 @@
 - Este é um sistema de gerenciamento de conteúdo para um portal de notícias.  
 - Ele permite que jornalistas cadastrem matérias (título, conteúdo, autor, data e categoria) e que leitores acessem as notícias organizadas por data e tema.
 
+
+
 ## 🚀 Tecnologias Utilizadas
 - **Frontend:** HTML, CSS, JavaScript  
 - **Backend:** Node.js + Express  
 - **Banco de Dados:** MySQL  
 - **Hospedagem:**  
   - **Frontend:** [GitHub Pages](https://seu-usuario.github.io/seu-repo/)  
-  - **Backend & DB:** [Railway](https://seu-backend.up.railway.app)  
+  - **Backend & DB:** [Railway](https://seu-backend.up.railway.app) 
+- Site: [Notícias WEB](https://taresorlande.github.io/noticias/)
 
 ## 📊 Arquitetura
 
